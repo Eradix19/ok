@@ -176,13 +176,6 @@ client.on('message', msg => {
   }
 })
 
-client.on('guildMemberAdd', member => {
-  member.send(
-    `Welcome on the server! Please be aware that we won't tolerate troll, spam or harassment. Have fun ??`
-  )
-})
-
-
 client.on('message', msg => {
   if (msg.content === '.invite') {
     msg.reply('https://discordapp.com/api/oauth2/authorize?client_id=592007817318105130&permissions=8&scope=bot')
